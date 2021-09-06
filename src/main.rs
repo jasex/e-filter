@@ -2,7 +2,7 @@ use pow::*;
 use std::io;
 use std::sync::mpsc;
 use std::thread;
-const DIFFICULTY: [u8; 4] = [0, 0, 0, 0];
+const DIFFICULTY: [u8; 3] = [0, 0, 0];
 
 fn slave(mut message: Message, length: u128) -> Result<Message, ()> {
     for _ in 0..length {
